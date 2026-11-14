@@ -1,0 +1,231 @@
+```css
+/* Bakery Production and Expiry Management System */
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #542b20;
+    padding: 25px 15px;
+    color: #ffffff;
+    overflow-y: auto;
+}
+
+.sidebar h2,
+.sidebar .logo {
+    margin-bottom: 30px;
+    color: #ffd166;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.sidebar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 13px;
+    margin: 8px 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #86513d;
+    color: #ffffff;
+}
+
+/* Main Dashboard Content */
+
+.main {
+    margin-left: 230px;
+    padding: 30px;
+    min-height: 100vh;
+    color: #333333;
+}
+
+.main-content {
+    margin-left: 230px;
+    padding: 30px;
+    min-height: 100vh;
+    color: #333333;
+}
+
+/* Headings */
+
+h1 {
+    color: #542b20;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+h2 {
+    color: #75432f;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #542b20;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+header p {
+    color: #555555;
+    margin-top: 8px;
+}
+
+/* Notification Bell */
+
+.bell {
+    font-size: 25px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.bell span {
+    font-size: 14px;
+    color: #c0392b;
+}
+
+/* Dashboard Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    color: #333333;
+    min-width: 0;
+}
+
+.card h3 {
+    font-size: 15px;
+    color: #542b20;
+    margin-bottom: 10px;
+    display: block;
+    visibility: visible;
+}
+
+.card p {
+    display: block;
+    color: #222222;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    min-height: 36px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Welcome and Alerts Sections */
+
+.welcome,
+.alerts {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 25px;
+    color: #333333;
+}
+
+.welcome p {
+    color: #333333;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.alerts p {
+    color: #333333;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* Alert Colors */
+
+.warning {
+    border-left: 5px solid #e5a000;
+}
+
+.danger {
+    border-left: 5px solid #d64545;
+}
+
+.expired {
+    background: #ffe5e5;
+    color: #b42318;
+}
+
+.expiring {
+    background: #fff3cd;
+    color: #805b00;
+}
+
+.fresh {
+    background: #e2f7e8;
+    color: #216e39;
+}
+
+/* Forms */
+
+form {
+    background: #ffffff;
+    color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0 25px;
+    max-width: 700px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #542b20;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
